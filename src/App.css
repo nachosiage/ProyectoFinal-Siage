@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tituloPrincipal {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+}
+
+.cartelera {
+    height: 500px;
+    justify-content: center;
+}
+
+
+/* navbar */
+.navbar {
+    background-color: #000;
+}
+
+.container-fluid {
+    color: #fff;
+}
+
+.nav-item a {
+    color: #fff;
+}
+
+
+.nav-item a:hover {
+    color: #ebebeb;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.bi {
+    font-size: 30px;
+}
+
+
+
+/*cartwidget */
+.carrito { 
+    height: 50px;
+    width: 50px;
+}
+
+.carrito .bi {
+    margin-top: 5px;
+}
+.carrito span {
+    text-decoration: none;
+}
+
+
+/* producto carrito */
+.producto-carrito {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    border: .5px solid black;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.producto-carrito img{
+    height: 150px;
+    width: 150px;
+}
+
+.producto-carrito h3, 
+.producto-carrito p {
+    padding-top: 60px;
+}
+
+
+
+/* carrousel */
+.carousel-inner {
+    max-width: 90%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.carousel-inner a img {
+    margin-top: 20px;
+    height: 500px;
+}
+
+
+
+/* cards */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-block: 2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.producto:hover {
+    transform: scale(1.005);
+    transition: .3s;
+    box-shadow: 1px 0px 31px -3px rgba(0,0,0,0.5);
+-webkit-box-shadow: 1px 0px 31px -3px rgba(0,0,0,0.5);
+-moz-box-shadow: 1px 0px 31px -3px rgba(0,0,0,0.5);
+}
+
+.producto > div {
+    padding: 1rem;
+    border: .2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.producto > img {
+    width: 100%;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    height: 300px;
+}
+
+.producto .ver-mas {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: .5rem;
+    width: max-content;
+    border-radius: .5rem;
+    transition: .2s;
+}
+
+.producto .ver-mas:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.info {
+    height: 250px;
+}
+
+
+
+/* itemlistcontainer */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* ItemDetail */
+.producto-detalle {
+    padding-block: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.producto-detalle img {
+    width: 100%;
+}
+
+.producto-detalle-info h3 {
+    font-size: 2rem;
+}
+
+.categoria {
+    font-size: .8rem;
+    color: #424242;
+    margin-top: 1rem;
+}
+
+.precio {
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+
+.titulo-nosotros {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.parrafo-nosotros { 
+    height: 80px;
+    width: 70%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.parrafo-nosotros-2 { 
+    height: 100px;
+    width: 60%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+
+
+.titulo {
+    font-size: 40px;
+}
+
+.descripcion {
+    font-size: 20px;
+}
+
+.fecha, .categoria {
+    font-size: 18px;
+}
+
+.comprarPass {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.comprarPass:hover {
+    background-color: rgb(28, 164, 71);
+    transition: .2s;
+}
+
+
+
+/* item-count */
+.item-count {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.item-count p{
+    height: 2rem;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+.item-count button, .agregar-al-carrito, .enviar {
+    background-color: black;
+    border: 0;
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+    border: 2px solid var(--clr-main);
+    transition: .2s;
+}
+
+.item-count button:hover,  .enviar:hover {
+    background-color: white;
+    border: .5px solid black;
+    color: black;
+}
+
+.agregar-al-carrito:hover {
+    background-color: rgb(28, 164, 71);
+}
+
+.agregar-al-carrito, .enviar {
+    width: auto;
+    height: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+
+
+
+
+/* footer */
+.footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer img {
+    height: 100px;
+}
+
+.categorias, .tu-evento {
+    padding-top: 30px;
+}
+
+.footer .passpampa i {
+    color: white;
+}
+
+.passpampa p svg {
+    width: 30px;
+}
+
+
+
+/* formulario */
+.container {
+    max-width: 1140px;
+    padding-inline: 1.5rem;
+    margin: 0 auto;
+}
+
+.main-title {
+    margin-top: 2rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: flex-start;
+}
+
+.formulario input {
+    padding: .5rem;
+    width: 18rem;
+    border-radius: .5rem;
+    border: 2px solid black;
+}
+
+.formulario button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.formulario button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border-color: 1px solid black;
+    transition: .2s;
+}
+
+
+
+
+
+/* CREA TU EVENTO */
+h6 {
+    font-size: 18px;
+}
+
+input {
+    width: 400px;
+    height: 30px;
+}
+
+.crea-tu-evento-desripcion,
+.crea-tu-evento-categoria,
+.crea-tu-evento-edad,
+.crea-tu-evento-fechaInicio,
+.crea-tu-evento-fechaFinalizacion,
+.crea-tu-evento-provincia,
+.crea-tu-evento-localidad,
+.crea-tu-evento-direccion,
+.crea-tu-evento-lugar,
+.crea-tu-evento-foto, 
+.crea-tu-evento-video{
+    margin-top: 20px;
+}
+
+.crea-tu-evento-terminos {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(73, 73, 255);
+}
+
+.crea-tu-evento-terminos input {
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.crea-tu-evento-btn {
+    margin:  20px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.crea-tu-evento-btn:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.02);
+    transition: .2s;
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    
+    .nav-item a:hover {
+        color: #fff;
+        transform: scale(1.005);
+        border-bottom: 2px solid #fff;
+        transition: .3s;
+    }
+
+}
