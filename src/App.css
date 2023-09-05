@@ -226,6 +226,12 @@ h1 {
     font-size: 18px;
 }
 
+.fecha svg, .location svg, 
+.categoria svg, .precio svg {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
 .comprarPass {
     font-size: 20px;
     color: white;

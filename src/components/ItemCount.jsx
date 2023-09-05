@@ -2,7 +2,23 @@ import React, { useState } from 'react'
 
 const ItemCount = ( {cantidad, handleRestar, handleSumar, handleAgregar} ) => {
     
-  
+    handleAgregar = ( {} ) => {
+        Toastify({
+            text: "Agregado al carrito",
+            duration: 3000,
+            newWindow: true,
+            close: true,
+            gravity: "top", 
+            position: "right", 
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "black",
+              color: "white"
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
+    }
+    
     return (
 
     <div>
