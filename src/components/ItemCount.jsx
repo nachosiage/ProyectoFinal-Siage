@@ -1,23 +1,7 @@
 import React, { useState } from 'react'
 
-const ItemCount = ( {cantidad, handleRestar, handleSumar, handleAgregar} ) => {
+const ItemCount = ( {cantidad, handleRestar, handleSumar, handleAgregar, onAdd} ) => {
     
-    handleAgregar = ( {} ) => {
-        Toastify({
-            text: "Agregado al carrito",
-            duration: 3000,
-            newWindow: true,
-            close: true,
-            gravity: "top", 
-            position: "right", 
-            stopOnFocus: true, // Prevents dismissing of toast on hover
-            style: {
-              background: "black",
-              color: "white"
-            },
-            onClick: function(){} // Callback after click
-          }).showToast();
-    }
     
     return (
 
@@ -28,7 +12,7 @@ const ItemCount = ( {cantidad, handleRestar, handleSumar, handleAgregar} ) => {
             <p>{cantidad} </p>
             <button onClick={handleSumar}>+</button>
         </div>
-        <button className='agregar-al-carrito' onClick={handleAgregar}>Agregar al carrito</button>
+        <button className='agregar-al-carrito' onClick={() => onAdd(cantidad)}>Agregar al carrito</button>
 
     </div>
   )

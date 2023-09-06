@@ -28,7 +28,7 @@
         "description":"Evento realizado por Fabula, momento para comer, pasear, disfrutar de los shows en vivo, bailar",
         "fecha": "10 de Septiembre de 2023 a las 21:00",
         "location": "Cine teatro Pico",
-        "price": "$1.000",
+        "price": "$3.000",
         "stock": "200",
         "categoria": "fiesta"
     },
@@ -39,7 +39,7 @@
         "description":"Llego a General Pico, Barbie. La pelicula mas esperada del 2023",
         "fecha": "24 de Diciembre de 2023 a las 02:00",
         "location": "Cine Teatro Pico",
-        "price": "$3.000",
+        "price": "$1.000",
         "stock": "200",
         "categoria": "cine"
     },
@@ -72,7 +72,7 @@
         "description":"Llego elementos al Cine de General Pico, para que lo disfruten grandes y chicos",
         "fecha": "24 de Diciembre de 2023 a las 02:00",
         "location": "Ferro Gral. Pico",
-        "price": "$3.000",
+        "price": "$1.000",
         "stock": "200",
         "categoria": "cine"
     },
@@ -83,7 +83,7 @@
         "description":"Llega Megalodon 2 a la ciudad de General Pico",
         "fecha": "11 de Agosto de 2023 a las 21:00",
         "location": "Cine Teatro Pico",
-        "price": "$1.500",
+        "price": "$1.000",
         "stock": "200",
         "categoria": "cine"
     }

@@ -12,8 +12,6 @@ import { CartProvider } from './context/CartContext';
 import Carrito from './components/Carrito';
 
 function App() {
-
-  
   return ( 
     
       <div>

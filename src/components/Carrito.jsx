@@ -19,7 +19,7 @@ const Carrito = () => {
                 <h3>{prod.title}</h3>
                 <img src={prod.img} alt="" />
                 <p>Precio unitario: {prod.price}</p>
-                <p>Cantidad: {prod.cantidad}</p>
+                <p>Cantidad: {prod.cantidad }</p>
                 <p>Total: {prod.precio * prod.cantidad}</p>
                 <br />
                 </div>
