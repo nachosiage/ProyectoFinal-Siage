@@ -10,7 +10,7 @@ const ItemDetail = ( {item} ) => {
   console.log(carrito);
 
   const [cantidad, setCantidad] = useState(1);
-  const onAdd = ( {cantidad} ) => {
+  const onAdd = ( cantidad ) => {
     agregarAlCarrito(item, cantidad)
 
     Toastify({

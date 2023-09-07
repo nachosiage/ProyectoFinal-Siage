@@ -10,6 +10,7 @@ import Contacto from './components/Contacto';
 import CreaTuEvento from './components/CreaTuEvento';
 import { CartProvider } from './context/CartContext';
 import Carrito from './components/Carrito';
+import CheckOut from './components/CheckOut';
 
 function App() {
   return ( 
@@ -48,6 +49,9 @@ function App() {
 
               {/* pagina de carrito */}
               <Route path="/carrito" element={<Carrito />}/>
+
+              {/* pagina de checout */}
+              <Route path="/checkout" element={<CheckOut />}/>
 
 
             </Routes>
